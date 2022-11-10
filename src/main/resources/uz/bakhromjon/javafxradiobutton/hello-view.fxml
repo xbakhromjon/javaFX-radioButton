@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.bakhromjon.javafxradiobutton.HelloController">
+   <children>
+      <RadioButton fx:id="rButton1" layoutX="89.0" layoutY="259.0" mnemonicParsing="false" onAction="#displayFood" text="Pizza">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="253.0" layoutY="259.0" mnemonicParsing="false" onAction="#displayFood" text="Sushi" toggleGroup="$group" />
+      <RadioButton fx:id="rButton3" layoutX="422.0" layoutY="259.0" mnemonicParsing="false" onAction="#displayFood" text="Hamburger" toggleGroup="$group" />
+      <Label fx:id="label" alignment="CENTER" layoutX="3.0" layoutY="82.0" prefHeight="16.0" prefWidth="589.0" text="Select food">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
